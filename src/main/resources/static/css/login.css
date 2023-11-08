@@ -1,0 +1,56 @@
+.login-header{
+
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+h6{
+   font-family: 'Montserrat', sans-serif;
+}
+
+input{
+    border: 3px solid #20254b;
+    border-radius: 6px;
+    height: 40px;
+    margin: 0px 0px 10px 0px;
+}
+
+.login-button{
+    color: #ffffff;
+    border-radius: 9px;
+    border-color: #d8868d;
+    height: 41px;
+    background: #d8868d;
+    border-style: unset;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s;
+}
+
+.login-button:hover{
+    box-shadow: 0 0 10px 2px rgb(216, 134, 141);
+    transform: scale(1.05);
+    background: #f1d8da;
+    color: #d8868d;
+}
+
+.background-img {
+    background-image: url("../img/login-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the background covers the entire viewport height */
+}
+
+.sign-up-redirect{
+    text-align: center;
+}
+
+.login-form-wrap{
+    display: flex;
+    flex-direction: column;
+}
+

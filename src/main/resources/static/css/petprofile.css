@@ -1,0 +1,67 @@
+
+body{
+    background-color: #ffffff;
+    color: #0e1843;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pet-profile-pic{
+    border-style: solid;
+    border-radius: 50%;
+    background-color: #d19fa5;
+}
+img.pet-profile-pic {
+    /*border-radius: 70% 70% 50% 50% / 90% 90% 50% 50%;*/
+    width: 200px;
+    height: 200px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+
+.info-pet.column {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2em;
+}
+
+
+.profile-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pet-name{
+    text-align: center;
+}
+
+
+.petprofile-description{
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.review-container {
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    /*margin-top: 20px;*/
+    /*max-width: 50%;*/
+    /*!*max-height: 50%;*!     // these styles may be used later */
+    border: 2px solid #0e1843;
+    padding: 20px;
+    background-color: #dfb7b7;
+    border-radius: 20px
+
+}
+
+.review-container ul {
+    list-style: none;
+    padding: 0; /* Remove default padding on the list */
+}
+
+.review-container li {
+    margin: 10px 0; /* Add spacing between each review item */
+}

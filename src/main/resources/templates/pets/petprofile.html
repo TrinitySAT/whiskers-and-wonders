@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:insert="partials/header">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/petprofile.css">
+    <link rel="stylesheet" href="/css/mainStyling.css">
+</head>
+<body>
+<nav th:insert="partials/navbar"></nav>
+<div th:insert="partials/modal"></div>
+
+<form action="@{/pets/{id}/view}" th:method="get" th:object="${pet}"></form>
+    <div class="container">
+         <div class="profile-top ">
+             <img class="pet-profile-pic" th:src="${pet.getPhoto()}" alt="">
+                <h1 class="pet-name" th:text="${pet.getName()}"> </h1>
+         </div>
+            <div class="description column ">
+                <p class="petprofile-description"   th:text="'Description:  ' + ${pet.getName()}"> </p>
+            </div>
+
+             <h3 th:text="${pet.getDescription()}"></h3>
+                 <div class="info-pet column d-flex">
+                     <p th:text="${pet.getAge()}"></p>
+                     <p th:text="${pet.getBreed()}"></p>
+                     <p th:text="${pet.getGender()}"></p>
+                     <p th:text="${pet.getSize()}"></p>
+                 </div>
+    <div>
+        <h3>Foster Pet Reviews:</h3>
+
+        <div class="review-container">
+            <ul>
+                <li th:each="review : ${reviews}">
+                    <span th:text="${review}"></span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+</html>

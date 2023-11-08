@@ -1,0 +1,484 @@
+body{
+    color: #20254b;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+.user-profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.profile-banner {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+
+    row-gap: 15px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(../img/browse-bg.webp);
+    width: 100%;
+}
+
+.user-info {
+padding-top: 3rem;
+}
+
+
+.user-badges {
+    width: 49rem;
+    background: #fdccbc;
+    border-radius: 9px;
+    margin-top: 2em;
+}
+
+.badges-display{
+width: fit-content;
+}
+
+h4.badge-text {
+    display: flex;
+    justify-content: center;
+    color: #d9868d;
+    font-family: var(--primary-font);
+}
+
+.card.current-foster.row.gap-5.px-5.justify-content-center {
+width: 20%;
+margin-left: 4rem;
+height: 43vh;
+}
+
+input.btn.btn-primary {
+margin-left: 1rem;
+margin-top: 2rem;
+width: 14rem;
+height: 43px;
+}
+button.btn.btn-secondary {
+margin-top: 2rem;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    background: #ffeee2;
+    border-radius: 11px;
+}
+
+.modal-header{
+background: aliceblue;
+}
+input.btn.btn-danger {
+width: 13rem;
+height: 48px;
+}
+.cards-hide {
+display: none;
+}
+
+.active {
+    justify-content: center;
+    display: block;
+}
+
+.shown {
+    display: flex;
+}
+.hidden {
+    display: none;
+}
+
+.row-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background: #cee7f5;
+}
+
+.view-tab-buttons,.complete-foster-btn, .edit-account-btn, .remove-fav-btn{
+color: #ffffff;
+border-radius: 9px;
+border-color: #d8868d;
+height: 41px;
+background: #d8868d;
+border-style: unset;
+font-weight: bolder;
+justify-content: center;
+align-items: center;
+transition: box-shadow 0.3s;
+}
+
+.view-tab-buttons:hover,.edit-account-btn:hover, .complete-foster-btn:hover, .remove-fav-btn:hover{
+box-shadow: 0 0 10px 2px rgb(216, 134, 141);
+transform: scale(1.05);
+background: #f1d8da;
+color: #d8868d;
+}
+
+.user-pic-badge {
+    margin-left: 9rem;
+    display: flex;
+    justify-content: center;
+}
+
+.user-pic {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 16rem;
+height: 16rem;
+border-radius: 50%;
+border-style: double;border-color: #ffffff;
+background-image: url("../img/shiba-bg.jpg");
+background-size: cover;
+background-position: center;
+}
+.column.foster-info.d-flex.text-center {
+justify-content: space-around;
+align-items: center;
+}
+
+.user-info-wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.welcome-text{
+margin-right: 2em;
+font-family: var(--primary-font);
+    margin-top: 20px;
+}
+
+.foster-container{
+margin-top: 5em;
+}
+
+.profile-header{
+    display: flex;
+    color: #20254b;
+    font-family: var(--primary-font);
+    justify-content: space-around;
+}
+
+.current-foster-pet-pic, .previous-foster-pet-pic, .favorites-pet-pic{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 175px;
+    height: 175px;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.current-foster-card-container{
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3rem;
+    border-radius: 16px;
+    position: relative;
+    background-clip: padding-box;
+    text-align: center;
+    max-width: 274px;
+    background-color: #cfe6f48a;
+    border: 3px solid #cfe6f4;
+    color: #20254b;
+    box-shadow: 0 4px 8px #86b7fe;
+}
+
+.current-foster-name{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.active{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+}
+
+.previous-foster-card{
+
+    padding: 3rem;
+    border-radius: 16px;
+    position: relative;
+    background-clip: padding-box;
+    text-align: center;
+    max-width: 274px;
+    background-color: #fdccbd94;
+    border: 3px solid #fdccbd;
+    color: #20254b;
+    box-shadow: 0 4px 8px #fdccbd;
+    margin-bottom: 20px;
+
+}
+
+.previous-foster{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: baseline;
+    gap: 1em;
+}
+
+.fosters-container {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    flex-direction: row-reverse;
+}
+
+.previous-foster,
+.column.foster-info {
+    flex: 1;
+    padding: 10px;
+}
+
+.previousFostersHeader{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 11em;
+}
+
+.favorites-cards {
+    padding: 3rem;
+    width: 90%;
+    max-width: 311px;
+    background-color: #cfe6f48a;
+    border-radius: 16px;
+    position: relative;
+    border: 3px solid #cfe6f4;
+    background-clip: padding-box;
+    text-align: center;
+    color: #20254b;
+    box-shadow: 0 4px 8px #86b7fe;
+    margin: 15px;
+    flex: 0 0 calc(50% - 10px);
+}
+
+/* Style for validation error on edit profile modal*/
+.validation-error {
+    color: red;
+    font-size: large;
+    background-color: #EFF8FF;
+    align-items: center;
+}
+
+/* Style for the scrollable container */
+.previous-foster-container {
+    max-height: 409px;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+    align-content: flex-start;
+    max-width: 575px;
+}
+
+/* Style for the individual cards inside the container */
+
+/* Style for the user badges container */
+.user-badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.user-badge-card {
+    flex: 0 0 calc(25% - 10px);
+}
+
+.badges-pic {
+    max-width: 100%;
+    height: auto;
+}
+
+.user-badges-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #fdccbc91;
+    /* min-width: 100%; */
+    border-radius: 19px;
+}
+
+.user-info{
+    display: flex;
+    margin-right: 12rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.review-card{
+    padding: 3rem;
+    border-radius: 16px;
+    position: relative;
+    background-clip: padding-box;
+    text-align: center;
+    background-color: rgba(244, 217, 219, 0.75);
+    border: 3px solid #f4d9db;
+    color: #20254b;
+    box-shadow: 0 4px 8px #f8ccd4;
+    max-width: 323px;
+}
+
+.delete-review-btn {
+    color: #ffffff;
+    border-radius: 9px;
+    margin-top: 20px;
+    border-color: #86b7fe;
+    width: 154px;
+    height: 41px;
+    background: #86b7fe;
+    border-style: unset;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s;
+}
+
+.delete-review-btn:hover{
+    box-shadow: 0 0 10px 2px rgb(134, 183, 254);
+    transform: scale(1.05);
+    background: #d4e1f6;
+    color: #86b7fe;
+
+}
+
+.review-foster-pet-pic{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 175px;
+    height: 175px;
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.edit-account-btn {
+    margin-top: 20px;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #feeee1;
+    background-clip: padding-box;
+    outline: 0;
+    border-radius: 46px;
+}
+
+/*this is for the scroll on the favorites tab*/
+/*fav tab styling */
+.favorites-header{
+    color: #20254b;
+    font-family: 'Young Serif', serif;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+.favorites-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 91px;
+}
+
+.scrollable-container {
+    max-height: 441px; /* Set the desired maximum height */
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between cards */
+}
+
+.fav-pet-name, h4, h5{
+    color: #20254b;
+    font-family: 'Young Serif', serif;
+    margin-bottom: 10px;
+}
+
+
+.remove-fav-btn, .submit-review-btn{
+    color: #ffffff;
+    border-radius: 9px;
+    margin-top: 20px;
+    border-color: #86b7fe;
+    width: 154px;
+    height: 41px;
+    background: #86b7fe;
+    border-style: unset;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.3s;
+}
+
+.remove-fav-btn:hover, .submit-review-btn:hover{
+    box-shadow: 0 0 10px 2px rgb(134, 183, 254);
+    transform: scale(1.05);
+    background: #d4e1f6;
+    color: #86b7fe;
+
+}
+
+/*end of fav tab styling */
+.current-cards{
+    margin-top: 4.5em;
+}
+
+.dash-review-container{
+    margin-left: 10em;
+
+}
+
+/*scroll container for reviews */
+.reviews-container {
+    width: 100vw;
+    max-height: 445px; /* Set the desired maximum height */
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4em;
+}
+
+/*.dash-review-container {*/
+/*    margin-left: 13em;*/
+/*}*/
+
+.nullMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Young Serif', serif;
+    text-align: center;
+}
+
+  .model-title{
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.review-modal-title{
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.update-alert{
+    color: red;
+}

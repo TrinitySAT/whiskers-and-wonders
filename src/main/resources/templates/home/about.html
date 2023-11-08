@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:insert="partials/header :: header"></div>
+
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/about.css">
+<!--<link rel="stylesheet"  href="/css/loading.css">-->
+    <link rel="stylesheet" href="/css/loading.css">
+
+
+</head>
+<body>
+<nav th:insert="partials/navbar :: nav"></nav>
+<form action="@{/about}" th:method="get"></form>
+
+
+<div class="container-fluid" id="content-container">
+    <div class="devs-container">
+
+        <h1 class="meet-Devs title-text"> Meet The Developers </h1>
+
+        <div class="Devs-R-Us">
+
+
+            <!--        EMILY PAGE-->
+            <div class=" row d-flex flex-wrap dev-cards">
+                <!--    Emily card -->
+                <div class="dev-card">
+                    <div class="blob1">
+
+
+                        <img src="/img/emily-headshot.jpeg" class="card-img-top emily-dev" alt="...">
+                        <div class="card-body">
+                            <p class="title-text"><strong>Emily Mendes</strong></p>
+                            <p class="body-text">Full Stack Developer</p>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex ">
+                        <a href="https://github.com/emilysmendes" target="_blank">
+                            <img src="/img/github.png" class="githubLogo">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/emilysvetcos/" target="_blank">
+                            <img src="/img/linkedin.png" class="linkedInLogo">
+                        </a>
+
+                        <a href="https://alumni.codeup.com/candidate/emily-mendes/" target="_blank">
+                            <img src="/img/codeuplogo.png" class="alumniLogo">
+                        </a>
+                    </div>
+                </div>
+                <!--    Sam card-->
+                <div class="dev-card">
+                    <img src="/img/sam-headshot.jpeg" class="card-img-top sam-dev" alt="...">
+                    <div class="card-body">
+                        <p class="title-text"><strong>Sam Ramos</strong></p>
+                        <p class="body-text">Full Stack Developer</p>
+                    </div>
+                    <div class="card-footer d-flex ">
+                        <a href="https://github.com/SamR0429" target="_blank">
+                            <img src="/img/github.png" class="githubLogo">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/samantha-ramos99/" target="_blank">
+                            <img src="/img/linkedin.png" class="linkedInLogo">
+                        </a>
+
+                        <a href="https://alumni.codeup.com/candidate/samantha-ramos/" target="_blank">
+                            <img src="/img/codeuplogo.png" class="alumniLogo">
+                        </a>
+                    </div>
+                </div>
+                <!--    Ty card-->
+                <div class="dev-card">
+                    <img src="/img/ty-headshot.jpeg" class="card-img-top ty-dev" alt="...">
+                    <div class="card-body">
+                        <p class="title-text"><strong>Ty O'neal</strong></p>
+                        <p class="body-text">Full Stack Developer</p>
+                    </div>
+                    <div class="card-footer d-flex ">
+                        <a href="https://github.com/TyONeal" target="_blank">
+                            <img src="/img/github.png" class="githubLogo">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/ty-oneal/" target="_blank">
+                            <img src="/img/linkedin.png" class="linkedInLogo">
+                        </a>
+
+                        <a href="https://alumni.codeup.com/candidate/tyler-oneal/" target="_blank">
+                            <img src="/img/codeuplogo.png" class="alumniLogo">
+                        </a>
+                    </div>
+                </div>
+                <!--    Keila card-->
+                <div class="dev-card">
+                    <img src="/img/keila-headshot.jpeg" class="card-img-top keila-dev" alt="...">
+                    <div class="card-body">
+                        <p class="title-text"><strong>Keila Vargas</strong></p>
+                        <p class="body-text">Full Stack Developer</p>
+                    </div>
+                    <div class="card-footer d-flex ">
+                        <a href="https://github.com/Kvar54" target="_blank">
+                            <img src="/img/github.png" class="githubLogo" >
+                        </a>
+
+<!--                        <a href="">-->
+                            <img src="/img/linkedin.png" class="linkedInLogo">
+<!--                        </a>-->
+
+                        <a href="https://alumni.codeup.com/candidate/keila-vargas/" target="_blank">
+                            <img src="/img/codeuplogo.png" class="alumniLogo">
+                        </a>
+                    </div>
+                </div>
+                <!--    Arusa card-->
+                <div class="dev-card">
+                    <img src="/img/arusa-headshot.jpeg" class="card-img-top arusa-dev" alt="...">
+                    <div class="card-body">
+                        <p class="title-text"><strong>Arusa Hussain</strong></p>
+                        <p class="body-text">Full Stack Developer</p>
+                    </div>
+                    <div class="card-footer d-flex ">
+                        <a href="https://github.com/hussainarusa" target="_blank">
+                            <img src="/img/github.png" class="githubLogo">
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/arusa-hussain/" target="_blank">
+                            <img src="/img/linkedin.png" class="linkedInLogo">
+                        </a>
+
+                        <a href="https://alumni.codeup.com/candidate/arusa-hussain/" target="_blank">
+                            <img src="/img/codeuplogo.png" class="alumniLogo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Devs-R-Us  div-->
+
+        </div>
+    </div>
+
+    <div class="mission-container row">
+        <h1 class="Title title-text"> Our Mission </h1>
+        <div class="mission-stmt1 column">
+            <p class="body-text"> At Kyte Rescue, our mission is to provide a safe and caring haven for animals facing
+                hardship and uncertainty, while simultaneously uniting them with compassionate individuals and families
+                willing to offer their homes and hearts. Our commitment is multi-faceted: we rescue animals from
+                challenging situations, provide them with comprehensive care and rehabilitation, and advocate for their
+                well-being. Through a network of dedicated foster families, we create loving, temporary homes that
+                nurture our animal friends back to health and happiness. We're equally dedicated to education, aiming to
+                raise awareness about responsible pet ownership, animal welfare, and the rewards of fostering. </p>
+            <p class="body-text">
+                In addition to our primary mission, Kyte Rescue understands the importance of building a strong and
+                interconnected community of animal lovers. We believe that the bond between humans and animals is not
+                only a source of companionship but also a foundation for empathy and kindness. To foster this belief, we
+                regularly organize events and workshops that bring together our supporters, volunteers, and adopters.
+                These gatherings serve as a platform for sharing experiences, knowledge, and stories of transformation,
+                further reinforcing the idea that every rescued animal is a testament to the power of compassion. By
+                uniting people from all walks of life, we hope to create a ripple effect of positive change that extends
+                beyond our shelter's walls, reaching every corner of our community and beyond. Together, we can make the
+                world a better place for animals and humans alike.
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="FAQ-page">
+        <h1 class="FAQ title-text"> Frequently Asked Questions </h1>
+        <div class="FAQ-questions">
+            <div class="accordion FAQ" id="accordionExample ">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header " id="headingOne">
+                        <button class="accordion-button title-text" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            1. What are the benefits of fostering a pet?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body body-text">
+                            <strong>Here are the benefits of Fostering an animal!</strong> Fostering a pet is a
+                            rewarding experience that saves lives, provides companionship, and offers a sense of
+                            fulfillment. It allows you to enjoy the perks of pet ownership without the long-term
+                            commitment, teaches responsibility, reduces stress, and often leads to successful adoptions.
+                            Fostering also contributes to overburdened shelters, creating a stronger sense of community
+                            among animal lovers. It's a flexible way to make a positive impact on animals in need and
+                            enrich your own life in the process.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed title-text" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2. What are the challenges of fostering a pet?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body body-text">
+                            <strong>Fostering A pet is not for everyone. Here are some of the challenges that may come
+                                with such a big responsibility. </strong> Fostering a pet may include adapting to a
+                            temporary commitment, managing potential behavioral issues, and dealing with the emotional
+                            attachment when the foster pet finds a permanent home. Additionally, some pets may require
+                            special medical care or have specific needs that demand extra attention. Fostering can also
+                            be emotionally taxing for individuals who may become attached to the animals they care for
+                            but must eventually say goodbye. Nonetheless, with the right support and resources from
+                            animal rescue organizations, many of these challenges can be overcome, making the rewards of
+                            fostering well worth the effort.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed title-text" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3. What kind of pets can I foster?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body body-text">
+                            <strong>We have access to all animals on our site, however...</strong> The types of pets you
+                            can foster vary depending on the animal rescue shelter in your location. Common foster pets
+                            include cats and dogs of all ages and breeds, but you might also have the opportunity to
+                            foster small animals like rabbits, guinea pigs, birds, and reptiles. Some shelters even
+                            offer fostering for special-needs pets or animals with medical conditions. It's essential to
+                            establish and specify your preferences when visiting our site so that we can find the right
+                            fit for your fostering experience.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed title-text" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            4. How do I prepare to foster a pet?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body body-text">
+                            <strong>It's important to be prepared.</strong> Preparing to foster a pet involves several
+                            key steps. Firstly, create a safe and welcoming space in your home for the animal, including
+                            appropriate bedding, food, and water. Familiarize yourself with the specific needs of the
+                            pet you'll be fostering, which may include medical requirements or behavioral
+                            considerations. Gather essential supplies, such as food, bowls, toys, and grooming tools.
+                            Lastly, communicate closely with the animal rescue organization to understand their
+                            expectations and guidelines, ensuring a smooth and positive fostering experience for both
+                            you and the pet.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed title-text" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            5. What do I need to provide for a foster pet?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body body-text">
+                            <strong>Make your home inviting to your foster pets.</strong> To care for a foster pet,
+                            you'll need to provide a safe home, nutritious food, clean water, essential supplies like
+                            bowls and toys, necessary medical attention, social interaction, exercise, and ongoing
+                            communication with the rescue shelters. Tailoring your care to the pet's specific needs,
+                            whether it's a dog, cat, or another animal, ensures a comfortable and nurturing environment
+                            during their stay with you.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--page wrapper div-->
+
+<script src="/js/image-loader.js"></script>
+<!--<script th:src="@{/js/image-loader.js}"></script>-->
+<footer th:insert="~{partials/footer :: footer}"></footer>
+
+</body>
+</html>
