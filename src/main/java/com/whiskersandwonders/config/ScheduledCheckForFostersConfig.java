@@ -15,8 +15,8 @@ import java.util.Objects;
 @Configuration
 @EnableScheduling
 public class ScheduledCheckForFostersConfig {
-    private UserRepository usersDao;
-    private FosterPetRepository fostersDao;
+    private final UserRepository usersDao;
+    private final FosterPetRepository fostersDao;
 
     ScheduledCheckForFostersConfig(UserRepository usersDao, FosterPetRepository fostersDao) {
         this.usersDao = usersDao;

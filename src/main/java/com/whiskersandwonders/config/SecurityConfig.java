@@ -14,7 +14,6 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class SecurityConfig {
 
-
     private final UserDetailsLoader usersLoader;
 
     public SecurityConfig(UserDetailsLoader usersLoader) {
